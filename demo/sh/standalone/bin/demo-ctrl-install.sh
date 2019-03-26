@@ -31,6 +31,30 @@ demo_check_target_exists () {
 	echo "File is exists:" "$HOME/bin/demo-ctrl"
 	echo "Try to backup"
 
+	local now=$(date +%Y%m%d_%s)
+
+	mv -v "$HOME/bin/demo-ctrl" "$HOME/bin/demo-ctrl.bak.$now"
+
+	if [ "$?" != "0" ]; then
+		echo
+		echo 'Backup Failure!'
+		exit 1
+	fi
+
+	echo
+
+	return 0
+}
+
+demo_check_target_exists_02 () {
+	if ! [ -f "$HOME/bin/demo-ctrl" ]; then ## file not exists
+		return 0
+	fi
+
+
+	echo "File is exists:" "$HOME/bin/demo-ctrl"
+	echo "Try to backup"
+
 	local ans="N"
 	read -p 'Are you sure? [y/N]' ans ## confirm
 	echo "Your answer is [ $ans ]"
