@@ -195,7 +195,8 @@ sub_run_reset () {
 ##
 
 main_usage () {
-	local cmd_name="$0"
+	##local cmd_name="$0"
+	local cmd_name="demo-ctrl"
 
 cat << EOF
 Usage:
