@@ -18,6 +18,13 @@ nnoremap <C-k> :bnext<CR>
 nnoremap <C-Bslash> :bnext<CR>
 
 
+" ## quit
+nnoremap ,q :q<CR>
+nnoremap ,x :q!<CR>
+
+" ## save
+nnoremap ,s :w<CR>
+
 ""
 """ Tail: Buffer
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
