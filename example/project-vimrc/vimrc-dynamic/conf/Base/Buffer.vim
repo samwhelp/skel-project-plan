@@ -17,6 +17,7 @@ nnoremap <C-Down> :bnext<CR>
 nnoremap <C-j> :bprevious<CR>
 nnoremap <C-k> :bnext<CR>
 " Note: collision <CTRL+\>
+" :help index.txt
 " :help mode-switching
 "nnoremap <C-Bslash> :bnext<CR>
 
