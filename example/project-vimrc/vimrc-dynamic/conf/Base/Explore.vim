@@ -4,8 +4,9 @@
 """ Head: Explore
 ""
 
-nnoremap ,e :Explore<CR>
-nnoremap ,g :Rexplore<CR>
+nnoremap ,e :Lexplore<CR>
+"nnoremap ,e :Explore<CR>
+"nnoremap ,g :Rexplore<CR>
 "nnoremap ,g :Explore<Space>
 
 ""
