@@ -4,9 +4,6 @@
 """ Head: TabPage
 ""
 
-" ## for close
-set autowrite
-
 
 " ## new tabpage or close
 "nnoremap tt :tabnew<CR>

@@ -5,6 +5,7 @@
 ""
 
 " ## for close
+set confirm
 set autowrite
 
 
@@ -16,6 +17,19 @@ nnoremap <C-Down> :bnext<CR>
 nnoremap <C-j> :bprevious<CR>
 nnoremap <C-k> :bnext<CR>
 nnoremap <C-Bslash> :bnext<CR>
+
+
+" ## list buffer
+nnoremap ,b :ls<CR>
+"nnoremap ,b :buffers<CR>
+"nnoremap ,b :files<CR>
+
+
+" ## delete buffer
+nnoremap <Leader>d :%bdelete<CR>
+nnoremap ,d :bdelete<CR>
+nnoremap <Leader>x :%bdelete!<CR>
+nnoremap <Leader>q :bdelete!<CR>
 
 
 " ## quit
@@ -74,11 +88,21 @@ nnoremap ,s :w<CR>
 " :help :files
 " http://vimdoc.sourceforge.net/htmldoc/windows.html#:files
 "
-" :help bnext
+" :help :bnext
 " http://vimdoc.sourceforge.net/htmldoc/windows.html#:bnext
 "
-" :help bprevious
+" :help :bprevious
 " http://vimdoc.sourceforge.net/htmldoc/windows.html#:bprevious
+"
+" ## :help :bdelete
+" http://vimdoc.sourceforge.net/htmldoc/windows.html#:bdelete
+"
+" ## :help 'confirm'
+" http://vimdoc.sourceforge.net/htmldoc/options.html#'confirm'
+"
+" ## :help 'autowrite'
+" http://vimdoc.sourceforge.net/htmldoc/options.html#'autowrite'
+
 
 ""
 """ Tail: Docs
