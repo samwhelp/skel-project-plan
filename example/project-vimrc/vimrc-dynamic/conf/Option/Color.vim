@@ -3,10 +3,15 @@
 """ Head: VertSplit
 ""
 
+" ## overwrite vert
 "set fillchars=vert:│,fold:·
 set fillchars=vert:\ ,fold:-
 
-hi VertSplit term=reverse ctermfg=234 ctermbg=234
+" ## Info
+":verbose hi
+":verbose hi VertSplit
+hi VertSplit term=reverse ctermfg=236 ctermbg=237
+
 
 ""
 """ Tail: VertSplit
@@ -21,6 +26,10 @@ hi VertSplit term=reverse ctermfg=234 ctermbg=234
 "
 " :help 'fillchars'
 " https://vimhelp.org/options.txt.html#%27fillchars%27
+"
+" :help hi
+" https://vimhelp.org/options.txt.html#%27fillchars%27
+
 
 ""
 """ Tail: Docs
