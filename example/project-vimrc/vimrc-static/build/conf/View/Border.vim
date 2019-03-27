@@ -45,6 +45,23 @@ hi StatusLineNC ctermfg=250 ctermbg=236 cterm=NONE
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Head: LineNr
+""
+
+"hi LineNr ctermfg=102 ctermbg=237 cterm=NONE
+"hi NonText ctermfg=59 ctermbg=236 cterm=NONE
+
+hi LineNr ctermfg=6 ctermbg=NONE cterm=NONE
+hi NonText ctermfg=232 ctermbg=NONE cterm=NONE
+
+""
+""" Tail: LineNr
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Head: Docs
 ""
 
