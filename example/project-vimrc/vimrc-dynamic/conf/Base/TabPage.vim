@@ -5,6 +5,14 @@
 ""
 
 
+" Note:
+" Use t for leader
+" overwrite exist t
+" please read
+" :help t
+" :help normal-index
+
+
 " ## new tabpage or close
 "nnoremap tt :tabnew<CR>
 nnoremap tg :tabnew<CR>
@@ -116,6 +124,8 @@ nnoremap ts :tab split<CR>
 "
 " :help t
 " http://vimdoc.sourceforge.net/htmldoc/motion.html#t
+"
+" :help normal-index
 "
 " :help keycodes
 " http://vimdoc.sourceforge.net/htmldoc/intro.html#keycodes
