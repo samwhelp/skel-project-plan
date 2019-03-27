@@ -13,6 +13,9 @@ nnoremap ,` :bprevious<CR>
 nnoremap ,<Tab> :bnext<CR>
 nnoremap <C-Up> :bprevious<CR>
 nnoremap <C-Down> :bnext<CR>
+nnoremap <C-j> :bprevious<CR>
+nnoremap <C-k> :bnext<CR>
+nnoremap <C-Bslash> :bnext<CR>
 
 
 ""
