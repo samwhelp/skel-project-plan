@@ -41,7 +41,7 @@ function! Core#postRun () abort
 
 	" ## Option
 	call Conf#load('Option/ColorTheme.vim')
-	call Conf#load('Option/Color.vim')
+	call Conf#load('Option/Border.vim')
 	call Conf#load('Option/LineNumber.vim')
 	call Conf#load('Option/Tab.vim')
 	call Conf#load('Option/InvisibleChar.vim')
