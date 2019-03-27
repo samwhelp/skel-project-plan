@@ -39,12 +39,12 @@ function! Core#postRun () abort
 	" call Conf#load('Plugin/NerdTree.vim')
 
 
-	" ## Option
-	call Conf#load('Option/ColorTheme.vim')
-	call Conf#load('Option/Border.vim')
-	call Conf#load('Option/LineNumber.vim')
-	call Conf#load('Option/Tab.vim')
-	call Conf#load('Option/InvisibleChar.vim')
+	" ## View
+	call Conf#load('View/ColorTheme.vim')
+	call Conf#load('View/Border.vim')
+	call Conf#load('View/LineNumber.vim')
+	call Conf#load('View/Tab.vim')
+	call Conf#load('View/InvisibleChar.vim')
 
 
 
