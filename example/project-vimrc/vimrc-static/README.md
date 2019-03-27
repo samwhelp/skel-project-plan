@@ -4,7 +4,7 @@
 ## Howto
 
 ``` sh
-$ cd builder
+$ cd build
 ```
 
 ``` sh
@@ -27,5 +27,5 @@ $ ln -sf "$(pwd)/vimrc" ~/.vimrc
 ## Alternative
 
 ``` sh
-$ make -f builder/Makefile build
+$ make -f build/Makefile build
 ```
