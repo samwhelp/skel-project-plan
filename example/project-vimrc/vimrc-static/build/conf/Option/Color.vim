@@ -1,12 +1,15 @@
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""" Head: Border
+""" Head: VertSplit
 ""
 
-set fillchars=vert:│,fold:·
+"set fillchars=vert:│,fold:·
+set fillchars=vert:\ ,fold:-
+
+hi VertSplit term=reverse ctermfg=234 ctermbg=234
 
 ""
-""" Tail: Border
+""" Tail: VertSplit
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 

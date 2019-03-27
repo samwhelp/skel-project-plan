@@ -41,10 +41,11 @@ mvim_build_vimrc () {
 	# conf
 	# conf - option
 	mvim_cat_conf_file "Option/ColorTheme.vim" >> "$file_path"
+	mvim_cat_conf_file "Option/Color.vim" >> "$file_path"
 	mvim_cat_conf_file "Option/LineNumber.vim" >> "$file_path"
 	mvim_cat_conf_file "Option/Tab.vim" >> "$file_path"
 	mvim_cat_conf_file "Option/InvisibleChar.vim" >> "$file_path"
-	mvim_cat_conf_file "Option/Border.vim" >> "$file_path"
+
 
 
 	# conf - base
