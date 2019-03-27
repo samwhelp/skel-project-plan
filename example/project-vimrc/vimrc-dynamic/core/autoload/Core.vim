@@ -44,6 +44,7 @@ function! Core#postRun () abort
 	call Conf#load('Option/LineNumber.vim')
 	call Conf#load('Option/Tab.vim')
 	call Conf#load('Option/InvisibleChar.vim')
+	call Conf#load('Option/Border.vim')
 
 
 	" ## Base

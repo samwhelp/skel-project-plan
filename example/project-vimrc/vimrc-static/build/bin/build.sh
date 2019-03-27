@@ -44,6 +44,7 @@ mvim_build_vimrc () {
 	mvim_cat_conf_file "Option/LineNumber.vim" >> "$file_path"
 	mvim_cat_conf_file "Option/Tab.vim" >> "$file_path"
 	mvim_cat_conf_file "Option/InvisibleChar.vim" >> "$file_path"
+	mvim_cat_conf_file "Option/Border.vim" >> "$file_path"
 
 
 	# conf - base
