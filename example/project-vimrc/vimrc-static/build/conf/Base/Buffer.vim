@@ -16,7 +16,9 @@ nnoremap <C-Up> :bprevious<CR>
 nnoremap <C-Down> :bnext<CR>
 nnoremap <C-j> :bprevious<CR>
 nnoremap <C-k> :bnext<CR>
-nnoremap <C-Bslash> :bnext<CR>
+" Note: collision <CTRL+\>
+" :help mode-switching
+"nnoremap <C-Bslash> :bnext<CR>
 
 
 " ## list buffer
