@@ -8,7 +8,10 @@
 "set listchars=tab:▸\ ,eol:¬
 set listchars=tab:▸\ ,
 set list
-nmap <leader>l :set list!<CR>
+
+
+" ## shortcut
+nnoremap <Leader>c :set list!<CR>
 
 ""
 """ Tail: Option - Show Invisibles
