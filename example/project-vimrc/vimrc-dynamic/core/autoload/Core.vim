@@ -53,6 +53,11 @@ function! Core#postRun () abort
 	call Conf#load('Base/Explore.vim')
 
 
+	" ## Extra
+	call Conf#load('Extra/Terminal.vim')
+
+
+
 endfunction
 
 

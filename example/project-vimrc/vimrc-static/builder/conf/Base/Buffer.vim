@@ -34,7 +34,8 @@ nnoremap <Leader>q :bdelete!<CR>
 
 " ## quit
 nnoremap ,q :q<CR>
-nnoremap ,x :q!<CR>
+nnoremap ,x :qa<CR>
+nnoremap ,c :qa!<CR>
 
 " ## save
 nnoremap ,s :w<CR>

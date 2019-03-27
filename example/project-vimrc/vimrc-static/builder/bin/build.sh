@@ -53,6 +53,10 @@ mvim_build_vimrc () {
 	mvim_cat_conf_file "Base/Explore.vim" >> "$file_path"
 
 
+	# conf - extra
+	mvim_cat_conf_file "Extra/Terminal.vim" >> "$file_path"
+
+
 	# tail
 	echo >> "$file_path"
 
