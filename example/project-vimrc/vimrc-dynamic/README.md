@@ -27,15 +27,15 @@ $ vim -u ./vimrc
 ## Info
 
 ``` sh
-$ vim -c ":scriptnames"
+$ vim -c ':scriptnames'
 ```
 
 ``` sh
-$ vim -c ":set rtp?"
+$ vim -c ':set rtp?'
 ```
 
 Or
 
 ``` sh
-$ vim -c ":set runtimepath?"
+$ vim -c ':set runtimepath?'
 ```
