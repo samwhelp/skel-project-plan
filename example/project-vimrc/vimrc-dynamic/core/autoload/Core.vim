@@ -43,7 +43,7 @@ function! Core#postRun () abort
 	call Conf#load('View/ColorTheme.vim')
 	call Conf#load('View/Border.vim')
 	call Conf#load('View/LineNumber.vim')
-	call Conf#load('View/Tab.vim')
+	call Conf#load('View/LineFormat.vim')
 	call Conf#load('View/InvisibleChar.vim')
 
 
