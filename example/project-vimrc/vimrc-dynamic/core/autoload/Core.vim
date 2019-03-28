@@ -54,6 +54,7 @@ function! Core#postRun () abort
 	call Conf#load('Base/TabPage.vim')
 	call Conf#load('Base/Explore.vim')
 	call Conf#load('Base/Mode.vim')
+	call Conf#load('Base/Cache.vim')
 
 	" ## Extra
 	call Conf#load('Extra/Terminal.vim')

@@ -54,6 +54,8 @@ mvim_build_vimrc () {
 	mvim_cat_conf_file "Base/TabPage.vim" >> "$file_path"
 	mvim_cat_conf_file "Base/Explore.vim" >> "$file_path"
 	mvim_cat_conf_file "Base/Mode.vim" >> "$file_path"
+	mvim_cat_conf_file "Base/Cache.vim" >> "$file_path"
+
 
 	# conf - extra
 	mvim_cat_conf_file "Extra/Terminal.vim" >> "$file_path"
