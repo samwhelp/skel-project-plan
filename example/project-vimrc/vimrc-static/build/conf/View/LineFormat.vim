@@ -50,7 +50,54 @@ set wrap
 
 "set wrapmargin=2
 
-
 ""
 """ Tail: Wrap
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Head: Cursor Line
+""
+
+"hi CursorLine ctermfg=254 ctermbg=237 cterm=NONE
+hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE
+
+set cursorline
+set nocursorcolumn
+
+
+au WinLeave * set nocursorline nocursorcolumn
+au WinEnter * set cursorline nocursorcolumn
+au InsertEnter * set nocursorline nocursorcolumn
+au InsertLeave * set cursorline nocursorcolumn
+
+
+""
+""" Tail: Cursor Line
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Head: Cursor Line and Column
+""
+
+"hi CursorLine ctermfg=254 ctermbg=237 cterm=NONE
+"hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE
+
+"hi CursorColumn ctermfg=254 ctermbg=237 cterm=NONE
+"hi CursorColumn ctermfg=NONE ctermbg=237 cterm=NONE
+
+"set cursorline
+"set cursorcolumn
+
+
+"au WinLeave * set nocursorline nocursorcolumn
+"au WinEnter * set cursorline cursorcolumn
+"au InsertEnter * set nocursorline nocursorcolumn
+"au InsertLeave * set cursorline cursorcolumn
+
+
+""
+""" Tail: Cursor Line and Column
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
