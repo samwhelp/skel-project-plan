@@ -40,6 +40,8 @@ filetype indent on
 """ Head: Wrap
 ""
 
+"set columns=80
+
 set wrap
 
 "set textwidth=80
@@ -47,6 +49,7 @@ set wrap
 "set linebreak
 
 "set wrapmargin=2
+
 
 ""
 """ Tail: Wrap

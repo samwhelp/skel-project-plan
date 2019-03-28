@@ -40,6 +40,8 @@ filetype indent on
 """ Head: Wrap
 ""
 
+"set columns=80
+
 set wrap
 
 "set textwidth=80
