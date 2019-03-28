@@ -21,13 +21,16 @@ hi VertSplit term=reverse ctermfg=236 ctermbg=236
 
 
 
-
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Head: StatusLine
 ""
 
 " ## always show status line
 set laststatus=2
+
+
+" ## show the line and column number of the cursor position
+set ruler
 
 
 " ## status line color
@@ -88,6 +91,7 @@ hi TabLineFill term=reverse ctermfg=236 ctermbg=232
 
 
 
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Head: Scroll
 ""
@@ -99,10 +103,6 @@ set sidescrolloff=15
 ""
 """ Tail: Scroll
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
-
-
 
 
 
