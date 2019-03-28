@@ -1,17 +1,40 @@
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""" Head: Mode
+""" Head: Mode Switch
 ""
 
 "from insert mode to normal mode
+"inoremap jj <Esc>
 "inoremap jk <Esc>
 inoremap hl <Esc>
 
 
 ""
-""" Tail: Mode
+""" Tail: Mode Switch
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Head: Wild Mode
+""
+
+" ## wildmode
+set wildmenu
+set wildmode=longest:list,full
+
+
+" ## ignore
+set wildignore+=*.o,*.a,*.so,*.obj,*.exe,*.lib,*.ncb,*.opt,*.plg,.svn,.git
+set wildignore+=*.png,*.jpg,*.gif,*.svg,*.xpm
+
+""
+""" Tail: Wild Mode
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
