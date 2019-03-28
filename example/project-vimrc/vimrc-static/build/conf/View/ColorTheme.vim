@@ -11,6 +11,16 @@ set t_Co=256
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Head: Syntax
+""
+
+syntax on
+
+""
+""" Tail: Syntax
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -20,6 +30,7 @@ set t_Co=256
 " :!ls /usr/share/vim/vim80/colors/ -1
 " $ ls /usr/share/vim/vim80/colors/ -1 | grep '\.vim' | awk -F '.' '{print $1}'
 " $ ls /usr/share/vim/vim80/colors/ -1 | grep '\.vim' | awk -F '.' '{print "\"colorscheme", $1}'
+
 
 "colorscheme blue
 "colorscheme darkblue
@@ -32,11 +43,11 @@ set t_Co=256
 "colorscheme koehler
 "colorscheme morning
 "colorscheme murphy
-"colorscheme pablo
-"colorscheme peachpuff
+colorscheme pablo  					" *
+"colorscheme peachpuff				" *
 "colorscheme ron
 "colorscheme shine
-"colorscheme slate
+"colorscheme slate					" *
 "colorscheme torte
 "colorscheme zellner
 
