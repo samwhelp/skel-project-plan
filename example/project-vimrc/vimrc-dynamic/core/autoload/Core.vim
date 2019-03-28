@@ -45,6 +45,7 @@ function! Core#postRun () abort
 	call Conf#load('View/LineNumber.vim')
 	call Conf#load('View/LineFormat.vim')
 	call Conf#load('View/InvisibleChar.vim')
+	call Conf#load('View/Folding.vim')
 
 
 

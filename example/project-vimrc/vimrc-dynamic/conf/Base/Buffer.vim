@@ -10,7 +10,7 @@ set confirm
 
 
 " ## change the current working directory whenever you open a file
-set autochdir
+"set autochdir
 
 
 " ##

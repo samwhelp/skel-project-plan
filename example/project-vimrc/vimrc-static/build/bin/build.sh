@@ -45,6 +45,7 @@ mvim_build_vimrc () {
 	mvim_cat_conf_file "View/LineNumber.vim" >> "$file_path"
 	mvim_cat_conf_file "View/LineFormat.vim" >> "$file_path"
 	mvim_cat_conf_file "View/InvisibleChar.vim" >> "$file_path"
+	mvim_cat_conf_file "View/Folding.vim" >> "$file_path"
 
 
 
