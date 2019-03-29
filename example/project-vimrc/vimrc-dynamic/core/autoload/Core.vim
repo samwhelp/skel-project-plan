@@ -7,6 +7,7 @@
 
 function! Core#init () abort
 	"echo 'Core init'
+	call Conf#View#Background#init() " call this for autoload on start. but not necessary. just for tab completion to show function.
 endfunction
 
 function! Core#prep () abort
