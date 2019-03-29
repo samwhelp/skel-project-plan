@@ -52,6 +52,7 @@ function! Core#postRun () abort
 
 
 	" ## Base
+	call Conf#load('Base/Register.vim')
 	call Conf#load('Base/Buffer.vim')
 	call Conf#load('Base/Window.vim')
 	call Conf#load('Base/TabPage.vim')

@@ -51,6 +51,7 @@ mvim_build_vimrc () {
 
 
 	# conf - base
+	mvim_cat_conf_file "Base/Register.vim" >> "$file_path"
 	mvim_cat_conf_file "Base/Buffer.vim" >> "$file_path"
 	mvim_cat_conf_file "Base/Window.vim" >> "$file_path"
 	mvim_cat_conf_file "Base/TabPage.vim" >> "$file_path"
