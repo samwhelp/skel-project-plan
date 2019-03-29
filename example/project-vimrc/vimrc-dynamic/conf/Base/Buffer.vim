@@ -9,10 +9,6 @@ set confirm
 "set autowrite
 
 
-" ## change the current working directory whenever you open a file
-"set autochdir
-
-
 " ##
 set autoread
 
@@ -74,6 +70,27 @@ nnoremap ,s :w<CR>
 
 ""
 """ Tail: Buffer
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Head: Change Dir_Path
+""
+
+" ## change the current working directory whenever you open a file
+"set autochdir
+set noautochdir
+
+" ## print current_work_dir_path
+nnoremap ,o :pwd<CR>
+
+" ## change current_work_dir_path to current_file_dir_path
+nnoremap ,p :set autochdir<CR>:set autochdir!<CR>:pwd<CR>
+
+""
+""" Tail: Change Dir_Path
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
