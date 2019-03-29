@@ -66,6 +66,7 @@ nnoremap <Leader>q :bdelete!<CR>
 " ## quit
 nnoremap ,q :q<CR>
 nnoremap ,x :qa<CR>
+nnoremap ,z :q!<CR>
 nnoremap ,c :qa!<CR>
 
 " ## save
