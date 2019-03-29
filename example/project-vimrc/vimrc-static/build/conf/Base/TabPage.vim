@@ -38,8 +38,7 @@ nnoremap <C-Left> :tabprevious<CR>
 nnoremap <C-Right> :tabnext<CR>
 nnoremap <C-h> :tabprevious<CR>
 nnoremap <C-l> :tabnext<CR>
-"nnoremap ,r :redraw<CR> "  for orignal <C-l>
-nnoremap ,p :redraw<CR> "  for orignal <C-l>
+nnoremap ,u :redraw<CR> "  for orignal <C-l>
 
 " ## switch to first or last
 nnoremap tj :tabfirst<CR>

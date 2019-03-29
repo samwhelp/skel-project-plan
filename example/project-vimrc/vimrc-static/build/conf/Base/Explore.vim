@@ -17,6 +17,23 @@ nnoremap ,e :Lexplore<CR>
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Head: Change Dir_Path
+""
+
+" ## print current_work_dir_path
+nnoremap ,o :pwd<CR>
+
+" ## change current_work_dir_path to current_file_dir_path
+nnoremap ,p :set autochdir<CR>:set autochdir!<CR>:pwd<CR>
+
+""
+""" Tail: Change Dir_Path
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Head: Docs
 
 " http://learnvimscriptthehardway.stevelosh.com/chapters/03.html
