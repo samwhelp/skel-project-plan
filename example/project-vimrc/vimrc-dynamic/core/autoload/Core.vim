@@ -42,12 +42,15 @@ function! Core#postRun () abort
 
 	" ## View
 	call Conf#load('View/ColorTheme.vim')
-	call Conf#load('View/Border.vim')
+	call Conf#load('View/VertSplit.vim')
+	call Conf#load('View/StatusLine.vim')
+	call Conf#load('View/TabLine.vim')
 	call Conf#load('View/LineNumber.vim')
 	call Conf#load('View/LineFormat.vim')
 	call Conf#load('View/InvisibleChar.vim')
 	call Conf#load('View/Folding.vim')
-	call Conf#load('View/ColorFit.vim')
+	call Conf#load('View/Scroll.vim')
+	call Conf#load('View/Background.vim')
 
 
 

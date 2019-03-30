@@ -32,7 +32,7 @@ set foldmarker=Head:,Tail:
 set foldnestmax=3
 
 "set foldlevel=0 " close all on start
-set foldlevel=4 " over 3, so open all onstart
+set foldlevel=4 " over 3, so open all on start
 
 
 set foldcolumn=0 " not dispaly foldcolumn

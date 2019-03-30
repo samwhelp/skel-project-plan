@@ -41,13 +41,15 @@ mvim_build_vimrc () {
 	# conf
 	# conf - view
 	mvim_cat_conf_file "View/ColorTheme.vim" >> "$file_path"
-	mvim_cat_conf_file "View/Border.vim" >> "$file_path"
+	mvim_cat_conf_file "View/VertSplit.vim" >> "$file_path"
+	mvim_cat_conf_file "View/StatusLine.vim" >> "$file_path"
+	mvim_cat_conf_file "View/TabLine.vim" >> "$file_path"
 	mvim_cat_conf_file "View/LineNumber.vim" >> "$file_path"
 	mvim_cat_conf_file "View/LineFormat.vim" >> "$file_path"
 	mvim_cat_conf_file "View/InvisibleChar.vim" >> "$file_path"
 	mvim_cat_conf_file "View/Folding.vim" >> "$file_path"
-	mvim_cat_conf_file "View/ColorFit.vim" >> "$file_path"
-
+	mvim_cat_conf_file "View/Scroll.vim" >> "$file_path"
+	mvim_cat_conf_file "View/Background.vim" >> "$file_path"
 
 
 	# conf - base
