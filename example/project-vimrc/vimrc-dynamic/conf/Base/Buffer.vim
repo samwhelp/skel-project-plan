@@ -1,7 +1,7 @@
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""" Head: Suit
+""" Head: Fit
 ""
 
 " ## for close
@@ -20,8 +20,11 @@ set fileencodings=utf-8,utf-16,big5,gb2312,gbk,gb18030,euc-jp,euc-kr,latin1
 "scriptencoding utf-8
 
 
+" ## hidden
+set hidden
+
 ""
-""" Tail: Suit
+""" Tail: Fit
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
