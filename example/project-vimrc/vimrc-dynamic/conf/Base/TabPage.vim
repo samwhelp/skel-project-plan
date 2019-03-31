@@ -63,9 +63,6 @@ nnoremap t0 10gt
 nnoremap tb :tab help<CR>
 
 
-" ## move left or right
-nnoremap tu :-tabmove<CR>
-nnoremap ti :+tabmove<CR>
 
 
 " ## move to 1~10
@@ -80,12 +77,20 @@ nnoremap tm8 :7tabmove<CR>
 nnoremap tm9 :8tabmove<CR>
 nnoremap tm0 :9tabmove<CR>
 
+
+" ## move left or right
+nnoremap tu :-tabmove<CR>
+nnoremap ti :+tabmove<CR>
+nnoremap tmh :-tabmove<CR>
+nnoremap tml :+tabmove<CR>
+
+
 " ## move to first or last
 nnoremap tmj :0tabmove<CR>
 nnoremap tmk :$tabmove<CR>
 
+
 " ## quit all
-nnoremap tx :qa!<CR>
 nnoremap tqa :qa!<CR>
 
 

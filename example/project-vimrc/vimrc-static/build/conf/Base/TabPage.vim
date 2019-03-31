@@ -84,8 +84,8 @@ nnoremap tm0 :9tabmove<CR>
 nnoremap tmj :0tabmove<CR>
 nnoremap tmk :$tabmove<CR>
 
+
 " ## quit all
-nnoremap tx :qa!<CR>
 nnoremap tqa :qa!<CR>
 
 
