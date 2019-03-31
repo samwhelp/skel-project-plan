@@ -55,25 +55,57 @@ nnoremap ,b :ls<CR>
 "nnoremap ,b :files<CR>
 
 
-" ## delete buffer
-nnoremap <Leader>q :bdelete<CR>
-nnoremap <Leader>x :%bdelete<CR>
-nnoremap <Leader>z :bdelete!<CR>
-nnoremap <Leader>c :%bdelete!<CR>
-
-
-
-" ## quit
-nnoremap ,q :q<CR>
-nnoremap ,x :qa<CR>
-nnoremap ,z :q!<CR>
-nnoremap ,c :qa!<CR>
-
 " ## save
 nnoremap ,s :w<CR>
 
 ""
 """ Tail: Buffer
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Head: Quit - Case 1
+""
+
+" ## delete buffer
+"nnoremap <Leader>q :bdelete<CR>
+"nnoremap <Leader>x :%bdelete<CR>
+"nnoremap <Leader>z :bdelete!<CR>
+"nnoremap <Leader>c :%bdelete!<CR>
+
+
+
+" ## quit
+"nnoremap ,q :q<CR>
+"nnoremap ,x :qa<CR>
+"nnoremap ,z :q!<CR>
+"nnoremap ,c :qa!<CR>
+
+""
+""" Tail: Quit - Case 1
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""" Head: Quit - Case 2
+""
+
+" ## delete buffer
+nnoremap <Leader>q :q<CR>
+nnoremap <Leader>x :qa<CR>
+nnoremap <Leader>z :q!<CR>
+nnoremap <Leader>c :qa!<CR>
+
+
+" ## quit
+nnoremap ,q :bdelete<CR>
+nnoremap ,x :%bdelete<CR>
+nnoremap ,z :bdelete!<CR>
+nnoremap ,c :%bdelete!<CR>
+
+
+""
+""" Tail: Quit - Case 2
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
@@ -128,6 +160,7 @@ nnoremap ,p :set autochdir<CR>:set autochdir!<CR>:pwd<CR>
 " http://vimdoc.sourceforge.net/htmldoc/map.html#map-modes
 
 
+" :help normal-index
 
 "
 " :help usr_07.txt
