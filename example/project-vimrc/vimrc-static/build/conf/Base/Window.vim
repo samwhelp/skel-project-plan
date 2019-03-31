@@ -13,6 +13,9 @@ nnoremap <BS> <C-w>W
 nnoremap ,wa :only<CR> " let me know which command
 
 
+" ## hide
+nnoremap ,h :hide<CR>
+
 """ Tail: Window
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
