@@ -3,8 +3,15 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Head: Window
 
-nnoremap <Tab> <C-w>w
+" ## switch window
+nnoremap <Tab> <C-w>w " ## use <Tab> or <C-i>
 nnoremap <BS> <C-w>W
+
+
+" ## current window only
+"nnoremap ,wa <C-w>o
+nnoremap ,wa :only<CR> " let me know which command
+
 
 """ Tail: Window
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
