@@ -56,10 +56,11 @@ nnoremap ,b :ls<CR>
 
 
 " ## delete buffer
-nnoremap <Leader>d :%bdelete<CR>
-nnoremap ,d :bdelete<CR>
-nnoremap <Leader>x :%bdelete!<CR>
-nnoremap <Leader>q :bdelete!<CR>
+nnoremap <Leader>q :bdelete<CR>
+nnoremap <Leader>x :%bdelete<CR>
+nnoremap <Leader>z :bdelete!<CR>
+nnoremap <Leader>c :%bdelete!<CR>
+
 
 
 " ## quit

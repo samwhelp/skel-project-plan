@@ -21,8 +21,8 @@ set listchars=tab:→\ ,trail:·,extends:↷,precedes:↶
 set list
 
 
-" ## switch shortcut 
-nnoremap <Leader>c :set list!<CR>
+" ## switch invisible chars
+nnoremap <Leader>a :set list!<CR>
 
 ""
 """ Tail: Option - Show Invisibles
