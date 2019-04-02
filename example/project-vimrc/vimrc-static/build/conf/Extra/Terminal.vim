@@ -3,8 +3,10 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ Head: Terminal
 
-" ## termkey
-set termkey=<C-l> "Ex: Orignal {<C-w>w} To {<C-l>w} on Terminal-Job Mode
+if !has('nvim')
+	" ## termkey
+	set termkey=<C-l> "Ex: Orignal {<C-w>w} To {<C-l>w} on Terminal-Job Mode
+endif
 
 
 " ## from [Terminal-Job Mode] to [Terminal-Normal Mode]
