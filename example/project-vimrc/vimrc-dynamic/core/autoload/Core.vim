@@ -5,70 +5,70 @@
 ""
 
 
-function! Core#init () abort
-	"echo 'Core init'
-	call Conf#View#Background#init() " call this for autoload on start. but not necessary. just for tab completion to show function.
+function! Core#Init () abort
+	"echo 'Core Init'
+	call Conf#View#Background#Init() " call this for autoload on start. but not necessary. just for tab completion to show function.
 endfunction
 
-function! Core#prep () abort
-	"echo 'Core prep'
+function! Core#Prep () abort
+	"echo 'Core Prep'
 endfunction
 
-function! Core#run () abort
-	"echo 'Core run'
-	call Core#prep()
-	call Core#preRun()
-	call Core#doRun()
-	call Core#postRun()
-endfunction
-
-
-function! Core#preRun () abort
-	"echo 'Core preRun'
+function! Core#Run () abort
+	"echo 'Core Run'
+	call Core#Prep()
+	call Core#PreRun()
+	call Core#DoRun()
+	call Core#PostRun()
 endfunction
 
 
-function! Core#doRun () abort
-	"echo 'Core doRun'
-endfunction
+function! Core#PreRun () abort
+	"echo 'Core PreRun'
 
-
-function! Core#postRun () abort
-	"echo 'Core postRun'
 
 	" ## Plugin
-	" call Conf#load('Plugin/NerdTree.vim')
+	" call Conf#Load('Plugin/NerdTree.vim')
 
 
 	" ## View
-	call Conf#load('View/ColorTheme.vim')
-	call Conf#load('View/VertSplit.vim')
-	call Conf#load('View/StatusLine.vim')
-	call Conf#load('View/TabLine.vim')
-	call Conf#load('View/LineNumber.vim')
-	call Conf#load('View/LineFormat.vim')
-	call Conf#load('View/InvisibleChar.vim')
-	call Conf#load('View/Folding.vim')
-	call Conf#load('View/Scroll.vim')
-	call Conf#load('View/Background.vim')
+	call Conf#Load('View/ColorTheme.vim')
+	call Conf#Load('View/VertSplit.vim')
+	call Conf#Load('View/StatusLine.vim')
+	call Conf#Load('View/TabLine.vim')
+	call Conf#Load('View/LineNumber.vim')
+	call Conf#Load('View/LineFormat.vim')
+	call Conf#Load('View/InvisibleChar.vim')
+	call Conf#Load('View/Folding.vim')
+	call Conf#Load('View/Scroll.vim')
+	call Conf#Load('View/Background.vim')
 
 
 
 	" ## Base
-	call Conf#load('Base/Mark.vim')	
-	call Conf#load('Base/Register.vim')
-	call Conf#load('Base/Buffer.vim')
-	call Conf#load('Base/Window.vim')
-	call Conf#load('Base/TabPage.vim')
-	call Conf#load('Base/Explore.vim')
-	call Conf#load('Base/Mode.vim')
-	call Conf#load('Base/Cache.vim')
+	call Conf#Load('Base/Mark.vim')
+	call Conf#Load('Base/Register.vim')
+	call Conf#Load('Base/Buffer.vim')
+	call Conf#Load('Base/Window.vim')
+	call Conf#Load('Base/TabPage.vim')
+	call Conf#Load('Base/Explore.vim')
+	call Conf#Load('Base/Mode.vim')
+	call Conf#Load('Base/Cache.vim')
 
 	" ## Extra
-	call Conf#load('Extra/Terminal.vim')
+	call Conf#Load('Extra/Terminal.vim')
 
 
+endfunction
 
+
+function! Core#DoRun () abort
+	"echo 'Core DoRun'
+endfunction
+
+
+function! Core#PostRun () abort
+	"echo 'Core PostRun'
 endfunction
 
 

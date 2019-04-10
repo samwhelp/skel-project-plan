@@ -1,16 +1,16 @@
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-""" Head: Conf
+""" Head: Conf#Load
 ""
 
-function! Conf#load (file_name) abort
-	let a:file_path = g:the_conf_dir_path . '/' . a:file_name
-	if filereadable(a:file_path)
-		execute 'source ' . a:file_path
+function! Conf#Load (file_name) abort
+	let l:file_path = fnamemodify(g:the_conf_dir_path . '/' . a:file_name, ':p')
+	if filereadable(l:file_path)
+		execute 'source' l:file_path
 	endif
 endfunction
 
 ""
-""" Tail: Conf
+""" Tail: Conf#Load
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
