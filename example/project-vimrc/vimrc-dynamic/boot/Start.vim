@@ -19,20 +19,25 @@ scriptencoding utf-8
 """ Head: Path
 ""
 
-let g:the_root_dir_path = fnamemodify(expand('<sfile>'), ':h')
-lockvar g:the_root_dir_path
-"echo g:the_root_dir_path
+let g:the_plan_dir_path = fnamemodify(expand('<sfile>:p:h'), ':h')
+lockvar g:the_plan_dir_path
+"echo g:the_plan_dir_path
 
-let g:the_boot_dir_path = fnamemodify(g:the_root_dir_path . '/../boot', ':p:h')
+let g:the_boot_dir_path = fnamemodify(g:the_plan_dir_path . '/boot', ':p')
+lockvar g:the_boot_dir_path
 "echo g:the_boot_dir_path
 
-let g:the_core_dir_path = fnamemodify(g:the_root_dir_path . '/../core', ':p:h')
+let g:the_core_dir_path = fnamemodify(g:the_plan_dir_path . '/core', ':p')
+lockvar g:the_core_dir_path
 "echo g:the_core_dir_path
 
-let g:the_conf_dir_path = fnamemodify(g:the_root_dir_path . '/../conf', ':p:h')
+let g:the_conf_dir_path = fnamemodify(g:the_plan_dir_path . '/conf', ':p')
+lockvar g:the_conf_dir_path
 "echo g:the_conf_dir_path
 
-let &runtimepath .= ',' . g:the_core_dir_path
+"set runtimepath+=g:the_core_dir_path
+"let &runtimepath .= ',' . g:the_core_dir_path
+let &runtimepath = g:the_core_dir_path . ',' . &runtimepath
 "echo &runtimepath
 
 ""

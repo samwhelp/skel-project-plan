@@ -1,3 +1,3 @@
 
 
-execute 'source' fnamemodify(expand('<sfile>'), ':h').'/boot/Start.vim'
+execute 'source' fnamemodify(expand('<sfile>:p:h') . '/boot/Start.vim', ':p')
