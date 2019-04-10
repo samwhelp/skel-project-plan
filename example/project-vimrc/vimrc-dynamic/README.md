@@ -2,7 +2,7 @@
 
 # vimrc
 
-## Howto
+## Howto use
 
 
 ### Way 1
@@ -18,13 +18,15 @@ ln -sf "$(pwd)" "$HOME/.vim"
 
 ### Way 2
 
+run
 
 ``` sh
 $ vim -u ./vimrc
 ```
 
-
 ## Info
+
+run
 
 ``` sh
 $ vim -c ':scriptnames'
@@ -34,8 +36,38 @@ $ vim -c ':scriptnames'
 $ vim -c ':set rtp?'
 ```
 
-Or
+or
 
 ``` sh
 $ vim -c ':set runtimepath?'
 ```
+
+
+## verbose
+
+``` sh
+$ vim -c ':verbose hi'
+```
+
+``` sh
+$ vim -c ':verbose hi NonText'
+```
+
+
+## startuptime
+
+> run `vim -h`, you can find `--startuptime`
+
+run
+
+``` sh
+$ vim --startuptime test.txt -u vimrc
+```
+
+then
+
+``` sh
+$ less test.txt
+```
+
+
