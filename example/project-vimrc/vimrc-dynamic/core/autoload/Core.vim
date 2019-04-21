@@ -54,6 +54,8 @@ function! Core#PreRun () abort
 	call Conf#Load('Base/Explore.vim')
 	call Conf#Load('Base/Mode.vim')
 	call Conf#Load('Base/Cache.vim')
+	call Conf#Load('Base/Edit.vim')
+
 
 	" ## Extra
 	call Conf#Load('Extra/Terminal.vim')

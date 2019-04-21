@@ -53,7 +53,7 @@ mvim_build_vimrc () {
 	local file_path="$THE_VIMRC_DIR_PATH/$1"
 
 	# head
-	
+
 	echo
 	echo "+Start: $file_path"
 	echo > "$file_path"
@@ -77,7 +77,7 @@ mvim_build_vimrc () {
 
 
 	# conf - base
-	mvim_apd_conf_file "Base/Mark.vim" "$file_path"	
+	mvim_apd_conf_file "Base/Mark.vim" "$file_path"
 	mvim_apd_conf_file "Base/Register.vim" "$file_path"
 	mvim_apd_conf_file "Base/Buffer.vim" "$file_path"
 	mvim_apd_conf_file "Base/Window.vim" "$file_path"
@@ -85,6 +85,7 @@ mvim_build_vimrc () {
 	mvim_apd_conf_file "Base/Explore.vim" "$file_path"
 	mvim_apd_conf_file "Base/Mode.vim" "$file_path"
 	mvim_apd_conf_file "Base/Cache.vim" "$file_path"
+	mvim_apd_conf_file "Base/Edit.vim" "$file_path"
 
 
 	# conf - extra
