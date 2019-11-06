@@ -94,15 +94,15 @@ inoremap <S-Tab> <Esc>:w<CR>a
 
 " ## delete buffer
 nnoremap <Leader>q :q<CR>
-nnoremap <Leader>x :qa<CR>
 nnoremap <Leader>z :q!<CR>
+nnoremap <Leader>x :qa<CR>
 nnoremap <Leader>c :qa!<CR>
 
 
 " ## quit
 nnoremap ,q :bdelete<CR>
-nnoremap ,x :%bdelete<CR>
 nnoremap ,z :bdelete!<CR>
+nnoremap ,x :%bdelete<CR>
 nnoremap ,c :%bdelete!<CR>
 
 

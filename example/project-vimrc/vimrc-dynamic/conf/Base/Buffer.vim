@@ -71,16 +71,16 @@ inoremap <S-Tab> <Esc>:w<CR>a
 
 " ## delete buffer
 "nnoremap <Leader>q :bdelete<CR>
-"nnoremap <Leader>x :%bdelete<CR>
 "nnoremap <Leader>z :bdelete!<CR>
+"nnoremap <Leader>x :%bdelete<CR>
 "nnoremap <Leader>c :%bdelete!<CR>
 
 
 
 " ## quit
 "nnoremap ,q :q<CR>
-"nnoremap ,x :qa<CR>
 "nnoremap ,z :q!<CR>
+"nnoremap ,x :qa<CR>
 "nnoremap ,c :qa!<CR>
 
 ""
@@ -94,15 +94,15 @@ inoremap <S-Tab> <Esc>:w<CR>a
 
 " ## delete buffer
 nnoremap <Leader>q :q<CR>
-nnoremap <Leader>x :qa<CR>
 nnoremap <Leader>z :q!<CR>
+nnoremap <Leader>x :qa<CR>
 nnoremap <Leader>c :qa!<CR>
 
 
 " ## quit
 nnoremap ,q :bdelete<CR>
-nnoremap ,x :%bdelete<CR>
 nnoremap ,z :bdelete!<CR>
+nnoremap ,x :%bdelete<CR>
 nnoremap ,c :%bdelete!<CR>
 
 
