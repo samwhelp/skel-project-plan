@@ -23,25 +23,24 @@ demo_download_target () {
 }
 
 demo_check_target_exists () {
-	if ! [ -f "$HOME/bin/demo-ctrl" ]; then ## file not exists
-		return 0
-	fi
+	if [ -f "$HOME/bin/demo-ctrl" ]; then ## file exists
 
-
-	echo "File is exists:" "$HOME/bin/demo-ctrl"
-	echo "Try to backup"
-
-	local now=$(date +%Y%m%d_%s)
-
-	mv -v "$HOME/bin/demo-ctrl" "$HOME/bin/demo-ctrl.bak.$now"
-
-	if [ "$?" != "0" ]; then
+		local now=$(date +%Y%m%d_%s)
+		echo "File is exists:" "$HOME/bin/demo-ctrl"
 		echo
-		echo 'Backup Failure!'
-		exit 1
-	fi
+		echo 'Please remove it first:'
 
-	echo
+		echo
+		echo '$ mv -v' '"$HOME/bin/demo-ctrl"' '"$HOME/bin/demo-ctrl.bak.'"$now"'"'
+
+		echo
+		echo 'Or'
+
+		echo
+		echo '$ rm -f' '"$HOME/bin/demo-ctrl"'
+
+		return 1
+	fi
 
 	return 0
 }
