@@ -24,7 +24,7 @@ cat << EOF
 
 Usage:
 
-	$ make [command]
+	$ make [action]
 
 Example:
 

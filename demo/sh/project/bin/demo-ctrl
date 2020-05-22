@@ -36,6 +36,38 @@ demo_list () {
 	echo "$@"
 }
 
+demo_run_test_pass () {
+
+	## $ ./demo-ctrl test '1   2' ' 3' "  4"
+
+	echo
+	echo '================================================================================'
+	echo
+
+	echo '	demo_run_test_pass'
+
+	echo
+	echo '================================================================================'
+	echo
+
+	echo "$1"
+	echo "$2"
+	echo "$3"
+
+	echo
+	echo '================================================================================'
+	echo
+
+	echo $1
+	echo $2
+	echo $3
+
+	echo
+	echo '================================================================================'
+	echo
+
+}
+
 ##
 ### Tail: Model
 ################################################################################
@@ -68,6 +100,46 @@ sub_run_reset () {
 	echo "sub_run_reset"
 }
 
+
+sub_run_test_pass () {
+	## $ ./demo-ctrl test_pass '1   2' ' 3' "  4"
+	demo_run_test_pass "$@"
+}
+
+sub_run_test () {
+
+	## $ ./demo-ctrl test '1   2' ' 3' "  4"
+
+
+	echo
+	echo '================================================================================'
+	echo
+
+	echo '	sub_run_test'
+
+	echo
+	echo '================================================================================'
+	echo
+
+	echo "$1"
+	echo "$2"
+	echo "$3"
+
+	echo
+	echo '================================================================================'
+	echo
+
+	echo $1
+	echo $2
+	echo $3
+
+	echo
+	echo '================================================================================'
+	echo
+
+}
+
+
 ##
 ### Tail: SubCmd
 ################################################################################
@@ -83,7 +155,7 @@ main_usage () {
 
 cat << EOF
 Usage:
-	$ $cmd_name [command]
+	$ $cmd_name [action]
 
 Example:
 
@@ -94,6 +166,11 @@ Example:
 	$ $cmd_name get
 	$ $cmd_name set some_value
 	$ $cmd_name reset
+
+
+	$ $cmd_name test '1   2' ' 3' "  4"
+	$ $cmd_name test_pass '1   2' ' 3' "  4"
+
 
 Debug:
 	$ export DEBUG_TOOL=true
@@ -120,20 +197,21 @@ main_run_sub_cmd () {
 
 	shift
 
-	local args="$@"
-
 	local function_name=$(sub_cmd_find_function_name "$sub_cmd")
 
 	## if ! command -v $function_name > /dev/null; then
-	if ! type -p $function_name; then
+	if ! type -p $function_name > /dev/null; then
 		util_debug_echo "[Debug] sub_cmd_function_not_exist: sub_cmd=$sub_cmd; function_name=$function_name"
 
 		echo
-		main_run_default_sub_cmd "$args"
+
+		main_run_default_sub_cmd "$@"
+
 		return 1
+
 	fi
 
-	"$function_name" "$args" ## run sub cmd function
+	"$function_name" "$@" ## run sub cmd function
 
 
 }
