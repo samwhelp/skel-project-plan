@@ -225,7 +225,42 @@ util_self_actions () {
 demo_list () {
 	echo "demo_list"
 	echo "$@"
+	echo $@
 }
+
+
+demo_run_test_pass () {
+
+	## $ ./demo-ctrl test '1   2' ' 3' "  4"
+
+	echo
+	echo '================================================================================'
+	echo
+
+	echo '	demo_run_test_pass'
+
+	echo
+	echo '================================================================================'
+	echo
+
+	echo "$1"
+	echo "$2"
+	echo "$3"
+
+	echo
+	echo '================================================================================'
+	echo
+
+	echo $1
+	echo $2
+	echo $3
+
+	echo
+	echo '================================================================================'
+	echo
+
+}
+
 
 ##
 ### Tail: Model
@@ -241,15 +276,15 @@ sub_run_help () {
 }
 
 sub_run_version () {
-	main_version $@
+	main_version
 }
 
 sub_run_self_update () {
-	util_self_update $@
+	util_self_update
 }
 
 sub_run_self_actions () {
-	util_self_actions $@
+	util_self_actions
 }
 
 
@@ -257,7 +292,7 @@ sub_run_self_actions () {
 
 sub_run_list () {
 	echo "sub_run_list"
-	demo_list $@
+	demo_list "$@"
 }
 
 sub_run_get () {
@@ -266,12 +301,55 @@ sub_run_get () {
 
 sub_run_set () {
 	echo "sub_run_set"
+	echo "$@"
 	echo $@
 }
 
 sub_run_reset () {
 	echo "sub_run_reset"
 }
+
+
+
+
+sub_run_test_pass () {
+	## $ ./demo-ctrl test_pass '1   2' ' 3' "  4"
+	demo_run_test_pass "$@"
+}
+
+sub_run_test () {
+
+	## $ ./demo-ctrl test '1   2' ' 3' "  4"
+
+
+	echo
+	echo '================================================================================'
+	echo
+
+	echo '	sub_run_test'
+
+	echo
+	echo '================================================================================'
+	echo
+
+	echo "$1"
+	echo "$2"
+	echo "$3"
+
+	echo
+	echo '================================================================================'
+	echo
+
+	echo $1
+	echo $2
+	echo $3
+
+	echo
+	echo '================================================================================'
+	echo
+
+}
+
 
 ##
 ### Tail: SubCmd
@@ -287,37 +365,53 @@ main_usage () {
 	local cmd_name="${THE_CMD_FILE_NAME}"
 
 cat << EOF
+
 Usage:
-	$ $cmd_name [action]
+
+	## synopsis
+
+		$ $cmd_name [action]
 
 Example:
 
 	## help
 
-	$ $cmd_name
-	$ $cmd_name help
+		$ $cmd_name
+		$ $cmd_name help
 
 	## version
 
-	$ $cmd_name version
+		$ $cmd_name version
 
 	## self_update
 
-	$ $cmd_name self_update
+		$ $cmd_name self_update
 
 	## self_actions
 
-	$ $cmd_name self_actions
+		$ $cmd_name self_actions
 
 	## model
 
-	$ $cmd_name list
-	$ $cmd_name get
-	$ $cmd_name set some_value
-	$ $cmd_name reset
+		$ $cmd_name list
+		$ $cmd_name get
+		$ $cmd_name set some_value
+		$ $cmd_name reset
+
+	## test_args
+
+		$ $cmd_name test '1   2' ' 3' "  4"
+		$ $cmd_name test_pass '1   2' ' 3' "  4"
 
 Debug:
-	$ export DEBUG_DEMO_CTRL=true
+
+	## on
+
+		$ export DEBUG_DEMO_CTRL=true
+
+	## off
+
+		$ export DEBUG_DEMO_CTRL=false	
 
 EOF
 
@@ -341,8 +435,6 @@ main_run_sub_cmd () {
 
 	shift
 
-	local args="$@"
-
 	local function_name=$(sub_cmd_find_function_name "$sub_cmd")
 
 	## if ! command -v $function_name > /dev/null; then
@@ -350,11 +442,11 @@ main_run_sub_cmd () {
 		util_debug_echo "[Debug] sub_cmd_function_not_exist: sub_cmd=$sub_cmd; function_name=$function_name"
 
 		echo
-		main_run_default_sub_cmd "$args"
+		main_run_default_sub_cmd "$@"
 		return 1
 	fi
 
-	"$function_name" "$args" ## run sub cmd function
+	"$function_name" "$@" ## run sub cmd function
 
 
 }
