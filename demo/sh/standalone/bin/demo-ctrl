@@ -411,7 +411,7 @@ Debug:
 
 	## off
 
-		$ export DEBUG_DEMO_CTRL=false	
+		$ export DEBUG_DEMO_CTRL=false
 
 EOF
 
@@ -438,7 +438,7 @@ main_run_sub_cmd () {
 	local function_name=$(sub_cmd_find_function_name "$sub_cmd")
 
 	## if ! command -v $function_name > /dev/null; then
-	if ! type -p $function_name; then
+	if ! type -p $function_name > /dev/null; then
 		util_debug_echo "[Debug] sub_cmd_function_not_exist: sub_cmd=$sub_cmd; function_name=$function_name"
 
 		echo
