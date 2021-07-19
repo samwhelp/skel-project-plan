@@ -1,22 +1,7 @@
 
 
 ################################################################################
-### Head: Util_Debug
-##
-
-util_debug_echo () {
-	if is_debug; then
-		echo "$@" 1>&2;
-	fi
-}
-
-##
-### Head: Util_Debug
-################################################################################
-
-
-################################################################################
-### Head: Util_Command
+### Head: Util / Command
 ##
 
 is_function_exist () {
@@ -44,5 +29,48 @@ is_command_exist () {
 }
 
 ##
-### Tail: Util_Command
+### Tail: Util / Command
+################################################################################
+
+
+################################################################################
+### Head: Util / Process
+##
+
+util_stop_all ()  {
+
+	if is_command_exist 'pkill'; then
+		util_stop_all_by_pkill "$1"
+		return 0
+	fi
+
+	if is_command_exist 'killall'; then
+		util_stop_all_by_killall "$1"
+		return 0
+	fi
+
+	return 0
+}
+
+util_stop_all_by_pkill () {
+
+	if pkill "$1"; then
+		return 0
+	fi
+
+	return 0
+}
+
+util_stop_all_by_killall () {
+
+	if killall -q -9 "$1"; then
+		return 0
+	fi
+
+	return 0
+
+}
+
+##
+### Tail: Util / Process
 ################################################################################
