@@ -16,7 +16,7 @@
 ### Head: Init
 ##
 set -e ## for Exit immediately if a command exits with a non-zero status.
-THE_BASE_DIR_PATH=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
+THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "$0")" ; pwd)"
 THE_CMD_FILE_NAME=$(basename $0)
 ### Tail: Init
 ################################################################################
@@ -45,15 +45,16 @@ util_error_echo () {
 ################################################################################
 ### Head: Base
 ##
+
 find_dir_path () {
-	if [ ! -d $(dirname -- "$1") ]; then
+	if ! [ -d "$(dirname -- "$1")" ]; then
 		dirname -- "$1"
 		return 1
 	fi
-	echo $(cd -P -- "$(dirname -- "$1")" && pwd -P)
+	echo "$(cd -- "$(dirname -- "$1")" ; pwd)"
 }
 
-##THIS_BASE_DIR_PATH=$(find_dir_path $0)
+##THIS_BASE_DIR_PATH="$(find_dir_path "$0")"
 
 ## $ export DEBUG_DEMO_CTRL=true
 is_debug () {
