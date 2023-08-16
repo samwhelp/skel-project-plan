@@ -105,6 +105,9 @@ base_var_init () {
 	THE_MAIN_SHARE_DIR_NAME="share"
 	THE_MAIN_SHARE_DIR_PATH="${THE_MAIN_DIR_PATH}/${THE_MAIN_SHARE_DIR_NAME}"
 
+	THE_MAIN_TMP_DIR_NAME="tmp"
+	THE_MAIN_TMP_DIR_PATH="${THE_MAIN_DIR_PATH}/${THE_MAIN_TMP_DIR_NAME}"
+
 
 
 
@@ -258,6 +261,10 @@ base_var_dump () {
 
 	util_debug_echo "THE_MAIN_SHARE_DIR_NAME=${THE_MAIN_SHARE_DIR_NAME}"
 	util_debug_echo "THE_MAIN_SHARE_DIR_PATH=${THE_MAIN_SHARE_DIR_PATH}"
+	util_debug_echo
+
+	util_debug_echo "THE_MAIN_TMP_DIR_NAME=${THE_MAIN_TMP_DIR_NAME}"
+	util_debug_echo "THE_MAIN_TMP_DIR_PATH=${THE_MAIN_TMP_DIR_PATH}"
 	util_debug_echo
 
 
