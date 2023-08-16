@@ -1,0 +1,6 @@
+.tmp
+init.vim
+vimrc
+.netrwhist
+*.swo
+*.swp

@@ -1,0 +1,18 @@
+
+## /etc/bash_completion.d/demo-ctrl
+## $ sudo install -m 644 ./demo-ctrl /etc/bash_completion.d/demo-ctrl
+
+_demo_ctrl () {
+
+	local cur prev words cword
+	_init_completion || return
+
+	if [ "$cword" = "1" ]; then
+		local action_list=$(DEBUG_DEMO_CTRL=false demo-ctrl self_actions)
+		COMPREPLY=( $( compgen -W "$action_list" -- "$cur" ) )
+	fi
+
+	return 0
+}
+
+complete -F _demo_ctrl demo-ctrl
