@@ -33,7 +33,7 @@ base_var_dump
 
 
 ##
-## ## Load / Main / Init
+## ## Load: Main
 ##
 
 . "${THE_MAIN_EXT_MAIN_DIR_PATH}/init.sh"
@@ -49,7 +49,7 @@ base_var_dump
 
 
 ##
-## ## Load / Master / Init
+## ## Load: Master
 ##
 
 . "${THE_MAIN_EXT_MASTER_DIR_PATH}/init.sh"
