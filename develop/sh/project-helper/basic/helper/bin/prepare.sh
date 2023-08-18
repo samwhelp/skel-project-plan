@@ -5,7 +5,11 @@
 ### Head: Note
 ##
 
-## * https://github.com/samwhelp/skel-project-plan/blob/gh-pages/demo/sh/project/bin/install.sh
+##
+## ## Link
+##
+## * https://github.com/samwhelp/skel-project-plan/blob/master/develop/sh/project-helper/basic/helper/bin/prepare.sh
+##
 
 ##
 ### Tail: Note
