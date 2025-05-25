@@ -20,6 +20,7 @@
 ### Head: Init
 ##
 
+#THE_CMD_FILE_NAME="$(basename "${0}")"
 THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "${0}")" ; pwd)"
 THE_INIT_DIR_PATH="${THE_BASE_DIR_PATH}/../ext"
 . "${THE_INIT_DIR_PATH}/init.sh"
