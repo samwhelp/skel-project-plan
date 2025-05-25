@@ -4,7 +4,7 @@
 ### Head: Main / Sys / Signal
 ##
 
-sys_exit_on_signal_interrupted () {
+sys_action_on_signal_interrupted () {
 
 	util_error_echo
 	util_error_echo "##"
@@ -15,7 +15,7 @@ sys_exit_on_signal_interrupted () {
 
 }
 
-sys_exit_on_signal_terminated () {
+sys_action_on_signal_terminated () {
 
 	util_error_echo
 	util_error_echo "##"
