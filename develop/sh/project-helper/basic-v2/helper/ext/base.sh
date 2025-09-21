@@ -84,8 +84,8 @@ base_var_init () {
 	## ## Base Path
 	##
 
-	REF_INIT_DIR_PATH="$(find_dir_path "${REF_INIT_DIR_PATH}/.")"
-	REF_PLAN_DIR_PATH="$(find_dir_path "${REF_INIT_DIR_PATH}/../../.")"
+	REF_INIT_DIR_PATH="$(find_dir_path "${REF_INIT_DIR_PATH}/-")"
+	REF_PLAN_DIR_PATH="$(find_dir_path "${REF_INIT_DIR_PATH}/../../-")"
 
 
 

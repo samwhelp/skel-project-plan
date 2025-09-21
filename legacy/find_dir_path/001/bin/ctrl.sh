@@ -24,7 +24,7 @@ __main__ () {
 	local path_plan="$(find_dir_path "$THE_BASE_DIR_PATH")"
 	echo "path_plan=$path_plan"
 
-	local path_ext="$(find_dir_path "$THE_BASE_DIR_PATH/.")"
+	local path_ext="$(find_dir_path "$THE_BASE_DIR_PATH/-")"
 	echo "path_ext=$path_ext"
 
 	local path_1="$(find_dir_path "$path_plan/./..")"

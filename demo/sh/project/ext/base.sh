@@ -52,7 +52,7 @@ is_not_debug () {
 base_var_init () {
 
 
-	THE_PLAN_DIR_PATH=$(find_dir_path "$THE_BASE_DIR_PATH/../.")
+	THE_PLAN_DIR_PATH=$(find_dir_path "$THE_BASE_DIR_PATH/../-")
 
 
 	THE_BIN_DIR_NAME="bin"
