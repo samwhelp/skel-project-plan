@@ -45,3 +45,10 @@ REF_BBB_DIR_PATH="$(find_dir_path "${REF_INIT_DIR_PATH}/*")"
 
 
 echo "REF_BBB_DIR_PATH=${REF_BBB_DIR_PATH}"
+
+
+
+REF_CCC_DIR_PATH="$(find_dir_path "${REF_INIT_DIR_PATH}/-")"
+
+
+echo "REF_CCC_DIR_PATH=${REF_CCC_DIR_PATH}"
